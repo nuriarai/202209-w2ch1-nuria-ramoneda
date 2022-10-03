@@ -1,22 +1,86 @@
 @use "../base/variables" as vars;
-@use "../";
+@use "../utils/sizes";
 
 .one {
-  body {
+  main {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
+    font-size: vars.$font-size-one-main;
+    color: #fff;
+    padding: vars.$padding-one-horitzontal;
   }
 
-  h1 {
-    color: vars.$color-main;
+  .one__link {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .one__main-title {
+    font-family: "Big Shoulders Display", cursive;
+    color: vars.$color-one-one;
+    text-align: center;
   }
 
-  h2 {
+  .cars-card__title {
     font-family: "Big Shoulders Display", cursive;
     font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    margin: 40px 0 30px;
   }
 
+  .wrapper-cars-list {
+    max-width: 930px;
+
+    margin: 40px auto 0 auto;
+  }
   .type-cars-list {
-    list-style-type: none;
+  }
+
+  .cars-card {
+    padding: sizes.pxToRem(46);
+    color: vars.$color-one-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 450px;
+  }
+
+  .cars-card--prime {
+    background-color: vars.$color-one-one;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .cars-card--second {
+    background-color: vars.$color-one-second;
+  }
+  .cars-card--third {
+    background-color: vars.$color-one-third;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .one {
+    .type-cars-list {
+      display: flex;
+      justify-content: space-between;
+      li {
+        width: 33.333%;
+      }
+    }
+    .cars-card {
+      min-height: 500px;
+    }
+
+    .cars-card--prime {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
+    }
+    .cars-card--third {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px;
+    }
   }
 }

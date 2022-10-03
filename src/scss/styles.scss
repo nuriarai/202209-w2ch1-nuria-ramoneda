@@ -1,3 +1,6 @@
 @use "base/reset";
-@use "base/variables" as vars;
+@use "base/variables";
+@use "base/globals";
 @use "components/header";
+@use "components/one";
+@use "components/buttons";
