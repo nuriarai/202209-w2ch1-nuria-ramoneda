@@ -1,0 +1,12 @@
+.main-header {
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
