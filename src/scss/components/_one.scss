@@ -1,0 +1,22 @@
+@use "../base/variables" as vars;
+@use "../";
+
+.one {
+  body {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+  }
+
+  h1 {
+    color: vars.$color-main;
+  }
+
+  h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+  }
+
+  .type-cars-list {
+    list-style-type: none;
+  }
+}
