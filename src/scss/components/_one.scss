@@ -34,8 +34,6 @@
 
     margin: 40px auto 0 auto;
   }
-  .type-cars-list {
-  }
 
   .cars-card {
     padding: sizes.pxToRem(46);
@@ -50,14 +48,23 @@
     background-color: vars.$color-one-one;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    .button {
+      color: vars.$color-one-one;
+    }
   }
   .cars-card--second {
     background-color: vars.$color-one-second;
+    .button {
+      color: vars.$color-one-second;
+    }
   }
   .cars-card--third {
     background-color: vars.$color-one-third;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    .button {
+      color: vars.$color-one-third;
+    }
   }
 }
 
