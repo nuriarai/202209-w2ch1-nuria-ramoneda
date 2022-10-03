@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "sass-compile": "sass src/scss/styles.scss public/assets/css/styles.css",
+    "sass-compile:dev": "sass src/scss/styles.scss public/assets/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
