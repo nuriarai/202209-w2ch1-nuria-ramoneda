@@ -9,3 +9,8 @@ $color-one-text: hsla(0, 0%, 100%, 0.75);
 $color-one-light-gray: hsl(0, 0%, 95%);
 
 $font-size-one-main: sizes.pxToRem(15);
+
+$padding-one-horitzontal: sizes.pxToRem(22);
+
+/**** globals ****/
+$current-color: $color-one-text;
